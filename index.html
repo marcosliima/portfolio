@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Marcos Lima | Desenvolvedor Web</title>
+	<script src="includes/portfolio.js"></script>
+	<link rel="stylesheet" type="text/css" href="includes/portfolio.css">
+	<link rel="icon" href="includes/image/favicon.png" type="image/png">
+
+</head>
+<body>
+
+
+
+
+	<div class="main-conteudo"
+	<div class="area-conteudo">
+	<div class="linha-conteudo">
+	<div class="coluna-full">
+		<div class="header">
+			<div class="menu">
+			<div class="logo-menu">ML<span>.</span> </div>
+			<div class="itens-menu">
+			<ul>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contato</a></li>
+			</div>
+		</div>
+			</div>
+	<div id="sobre-mim" class="banner">
+	<div id="bg-anime" class="bg-anime"></div>
+	<script type="text/javascript" src="includes/addons/particles.min.js"></script>
+	<script>
+	/* ---- particles.js config ---- */
+
+	particlesJS("bg-anime", {
+	"particles": {
+	"number": {
+	"value": 150,
+	"density": {
+	"enable": true,
+	"value_area": 1270
+	}
+	},
+	"color": {
+	"value": ["ffffff", "e4aa48"]
+	},
+	"shape": {
+	"type": "circle",
+	"stroke": {
+	"width": 0,
+	"color": "#FF0000"
+	},
+	"polygon": {
+	"nb_sides": 6
+	},
+	"image": {
+	"src": "img/github.svg",
+	"width": 100,
+	"height": 100
+	}
+	},
+	"opacity": {
+	"value": 1,
+	"random": false,
+	"anim": {
+	"enable": false,
+	"speed": 1,
+	"opacity_min": 0.1,
+	"sync": false
+	}
+	},
+	"size": {
+	"value": 6,
+	"random": true,
+	"anim": {
+	"enable": false,
+	"speed": 40,
+	"size_min": 0.1,
+	"sync": false
+	}
+	},
+	"line_linked": {
+	"enable": true,
+	"distance": 170,
+	"color": "#A9A9A9",
+	"opacity": 0.5,
+	"width": 1
+	},
+	"move": {
+	"enable": true,
+	"speed": 1.2,
+	"direction": "none",
+	"random": false,
+	"straight": false,
+	"out_mode": "out",
+	"bounce": false,
+	"attract": {
+	"enable": false,
+	"rotateX": 600,
+	"rotateY": 500
+	}
+	}
+	},
+	"interactivity": {
+	"detect_on": "canva",
+	"events": {
+	"onhover": {
+	"enable": true,
+	"mode": "grab"
+	},
+	"onclick": {
+	"enable": true,
+	"mode": "push"
+	},
+	"resize": true
+	},
+	"modes": {
+	"grab": {
+	"distance": 140,
+	"line_linked": {
+	"opacity": 1
+	}
+	},
+	"bubble": {
+	"distance": 400,
+	"size": 40,
+	"duration": 2,
+	"opacity": 8,
+	"speed": 3
+	},
+	"repulse": {
+	"distance": 200,
+	"duration": 0.4
+	},
+	"push": {
+	"particles_nb": 1
+	},
+	"remove": {
+	"particles_nb": 2
+	}
+	}
+	},
+	"retina_detect": true
+	});
+
+
+	/* ---- stats.js config ---- */
+
+	var count_particles, stats, update;
+	stats = new Stats;
+	stats.setMode(0);
+	stats.domElement.style.position = 'absolute';
+	stats.domElement.style.left = '0px';
+	stats.domElement.style.top = '0px';
+	document.body.appendChild(stats.domElement);
+	count_particles = document.querySelector('.js-count-particles');
+	update = function () {
+	stats.begin();
+	stats.end();
+	if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+	count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+	}
+	requestAnimationFrame(update);
+	};
+	requestAnimationFrame(update);
+
+	</script>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="area-conteudo sobre">
+		<div class="linha-conteudo">
+			<div class="coluna-half">
+				<div class="area-titulo">
+					<h1><span>Marcos Lima</span><br />Desenvolvedor Web</h1>
+				</div>
+			</div>
+
+			<div class="coluna-half last">
+				<div class="area-imagem">
+					<img src="includes/image/marcos-lima-imagem-sobre-mim.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="area-conteudo light">
+		<div class="linha-conteudo">
+			<div class="coluna-half">
+				<div class="texto-conteudo">
+					<p>Olá, meu nome é Marcos Lima. Sou um desenvolvedor web com experiência em HTML, JavaScript, PHP, CSS e estou atualmente aprimorando minhas habilidades em Python. Além disso, tenho uma vasta experiência com WordPress, o que me permite criar e gerenciar sites de maneira eficiente.</p>
+
+					<p>Além das minhas habilidades técnicas, também tenho experiência como líder de equipe. Nesse papel, não apenas contribuí para a produção, mas também gerenciei atividades, garantindo que todos os projetos fossem concluídos de maneira eficaz e eficiente.</p>
+
+					<p>Estou sempre buscando aprender e crescer na minha carreira e estou animado com as oportunidades que o futuro reserva.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="skills" class="area-conteudo">
+		<div class="linha-conteudo">
+			<div class="coluna-full">
+				<div class="area-h2">
+					<h2><span>Skills</span><br />Meu Conjunto de Habilidades</h2>
+				</div>
+				<div class="texto-conteudo"><p>Descubra minhas habilidades e competências. Cada uma delas foi aprimorada através de experiência, estudo e dedicação contínua. Explore e conheça mais!</p></div>
+			</div>
+			<div class="coluna-third">
+				<p class="especialidade full">Adobe Photoshop</p>
+				<p class="especialidade very">Adobe InDesign</p>
+				<p class="especialidade middle">JavaScript</p>
+				<p class="especialidade full">HTML</p>
+				<p class="especialidade full">CSS</p>
+				<p class="especialidade middle">MySQL</p>
+			</div>
+			<div class="coluna-third">
+				<p class="especialidade middle">PHP</p>
+				<p class="especialidade middle">Google Analytics</p>
+				<p class="especialidade full">Wordpress</p>
+				<p class="especialidade full">Betheme</p>
+				<p class="especialidade middle">Elementor</p>
+				<p class="especialidade full">Divi Theme</p>
+			</div>
+			<div class="coluna-third last">
+				<p class="especialidade middle">Inglês</p>
+				<p class="especialidade very">Google ADS</p>
+				<p class="especialidade full">SEO</p>
+				<p class="especialidade very">Python</p>
+				<p class="especialidade middle">Google Search Console</p>
+				<p class="especialidade middle">Leadlovers</p>
+			</div>
+		</div>
+	</div>
+	<div id="projetos" class="area-conteudo light">
+		<div class="linha-conteudo linha-projetos">
+			<div class="coluna-full">
+				<div class="area-h2">
+					<h2><span>Projetos</span><br />Compilação de Desenvolvimentos</h2>
+				</div>
+				<div class="texto-conteudo"><p>Os projetos que você vê são apenas uma amostra. Eles são uma pequena parte do meu vasto portfólio, representando apenas uma fração do trabalho que já realizei.</p></div>
+			</div>
+			<div class="coluna-four">
+				<div class="projetos">
+					<h3><span>Site</span><br />Agatha Galhardi</h3>
+					<img src="includes/image/marcos-lima-icone-menu-agatha.png" />
+					<div class="desc">
+						<p>O site de Ágatha Lara Galhardi apresenta suas credenciais como psicóloga clínica e especialista em Terapia Comportamental, formada pela Universidade São Francisco</p>
+						<img src="includes/image/marcos-lima-imagem-tecnologias-wordpress.png" alt="Imagem Tecnologias Usadas" />
+					</div>
+				</div>
+				<a class="botao" href="https://bit.ly/48wKfrm" target="_blank">Visitar site</a>
+			</div>
+
+			<div class="coluna-four">
+				<div class="projetos centro">
+					<h3><span>Site</span><br />Design Kapital</h3>
+					<img src="includes/image/marcos-lima-imagem-design-kapital.png" />
+					<div class="desc">
+						<p>A Design Kapital é uma agência especializada em marketing médico. Eles ajudam médicos a construir uma presença online sólida e eficaz através do marketing digital.</p>
+						<img src="includes/image/marcos-lima-imagem-tecnologias-wordpress.png" alt="Imagem Tecnologias Usadas" />
+					</div>
+				</div>
+				<a class="botao" href="https://bit.ly/3O6lSc1" target="_blank">Visitar site</a>
+			</div>
+
+
+			<div class="coluna-four">
+				<div class="projetos centro">
+					<h3><span>Site</span><br />Nova Geração</h3>
+					<img src="includes/image/marcos-lima-imagem-nova-geracao.png" />
+					<div class="desc">
+						<p>A Nova Geração é uma empresa que oferece seguros, consórcios e soluções de planejamento financeiro para médicos há mais de 20 anos.</p>
+						<img src="includes/image/marcos-lima-imagem-tecnologias-wordpress.png" alt="Imagem Tecnologias Usadas" />
+					</div>
+				</div>
+				<a class="botao" href="https://bit.ly/3O5ptXw" target="_blank" >Visitar site</a>
+			</div>
+
+
+			<div class="coluna-four last">
+				<div class="projetos">
+					<h3><span>Plugin</span><br />Adicionar Contato</h3>
+					<img src="includes/image/marcos-lima-imagem-plugin.png" />
+					<div class="desc">
+						<p>Plugin do WordPress para capturar e armazenar contatos do site, facilitando a comunicação e o crescimento do público.</p>
+						<img src="includes/image/marcos-lima-imagem-tecnologias-php.png" alt="Imagem Tecnologias Usadas" />
+					</div>
+				</div>
+				<a class="botao" href="https://bit.ly/3RYeCjn" target="_blank">Visitar Repositório</a>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="contatos" class="area-conteudo">
+		<div class="linha-conteudo">
+			<div class="coluna-full">
+				<div class="area-h2">
+					<h2><span>Contatos</span><br />como me encontrar</h2>
+				</div>
+				<div class="texto-conteudo"><p>Vamos colaborar para criar algo único. Se você tem uma ideia, entre em contato. Estou ansioso para trabalhar com você!</p></div>
+			</div>
+			<div class="contato">
+				<div class="coluna-four">
+					<a href="https://bit.ly/3SmFU4B" target="_blank"><img src="includes/image/marcos-lima-icone-whatsapp-contatos.png" alt="Icone Whatsapp" /></a>
+				</div>
+				<div class="coluna-four">
+					<a href="https://bit.ly/3U5Jv8f" target="_blank"><img src="includes/image/marcos-lima-icone-telegram-contatos.png" alt="Icone Telegram" /></a>
+				</div>
+				<div class="coluna-four">
+					<a href="https://bit.ly/48PM7LA" target="_blank"><img src="includes/image/marcos-lima-icone-linkedin-contatos.png" alt="Icone Linkedin" /></a>
+				</div>
+				<div class="coluna-four last">
+					<a href="mailto:marcos-als@outlook.com"><img src="includes/image/marcos-lima-icone-email-contatos.png" alt="Icone Email" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<footer>
+	<div id="menu" class="menu-sticky">
+		<div class="coluna-menu"><a href="#sobre-mim"><img src="includes/image/marcos-lima-icone-menu-sobre-mim.png" /><br /><span>Sobre mim</span></a></div>
+		<div class="coluna-menu"><a href="#skills"><img src="includes/image/marcos-lima-icone-menu-habilidades.png" /><br /><span>Skills</span></a></div>
+		<div class="coluna-menu"><a href="#projetos"><img src="includes/image/marcos-lima-icone-menu-projetos.png" /><br /><span>Projetos</span></a></div>
+		<div class="coluna-menu"><a href="#contatos"><img src="includes/image/marcos-lima-icone-menu-contatos.png" /><br /><span>Contatos</span></a></div>
+	</div>
+</footer>
+
+<script>
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,137 @@
+/* Gera/ */
+body {margin: 0 !important; font-family: 'Montserrat', sans-serif; background: #2e2e35;}
+body p {line-height: 1.5em; font-size: 18px; color: #ffff;}
+img {max-width: 100%;}
+
+
+/* Menu */
+.menu {max-width: 1240px;margin: auto;width: 80%;}
+.logo-menu {font-size: 42px;font-weight: 900;color: #fff;width: 20%;float: left;}
+.logo-menu span {color: #e4aa48}
+.itens-menu {width: 80%;float: left;font-weight: 700;text-transform: uppercase;color: #fff;display: flex;align-items: center;justify-content: end;height: 50px;}
+.itens-menu ul {display: flex !important;justify-content: space-between;width: 80%;list-style: none;padding-left: 0;}
+.itens-menu ul > li {position: relative;}
+.itens-menu ul > li::before {content:"";left: 50%;bottom: -5px;width: 0;height: 3px;position: absolute;background-color: #E4AA48;transition: ease-in-out .4s;}
+.itens-menu ul > li:hover::before {width: 100%;left: 0;transition: ease-in-out .4s;}
+.itens-menu a {text-decoration: none;color: #ffff}
+
+/* Botões */
+.botao {font-size: 18px;text-transform: uppercase;color: rgb(228, 170, 72);text-decoration: none;font-weight: 700;position: relative;width: 100%;display: block;text-align: center;padding: 15px 0;transition: ease-in-out .3s;}
+.botao::before {content:"";width: 100%;height: 100%;left: 0;top: 0;background-color: #2e2e35;position: absolute;z-index:-2;}
+.botao::after {content:"";width: 0;height: 100%;left: 50%;top: 0;background: linear-gradient(9deg, rgba(240,214,114,1) 0%, rgba(228,170,72,1) 100%);position: absolute;z-index:-1;transition: ease-in-out .4s;}
+.botao:hover::after {width: 100%;left: 0;transition: ease-in-out .4s;}
+
+/* Conteúdo */
+.area-conteudo {display: flex;align-content: center;justify-content: center;padding: 40px 0;}
+.area-conteudo.light {background-color: #34343b;}
+.area-conteudo .linha-conteudo {width: 80%;margin: auto;max-width: 1240px;}
+.area-conteudo .linha-conteudo .coluna-full {width: 100%;}
+.area-conteudo .linha-conteudo .area-titulo {background: #000000;}
+.area-conteudo .linha-conteudo .area-titulo h1, .area-conteudo .linha-conteudo .area-h2 h2 {color: #ffff;text-transform: uppercase;font-weight: 900; margin: 0 !important;}
+.area-conteudo .linha-conteudo .area-titulo h1 > span, .area-conteudo .linha-conteudo .area-h2 h2 > span {color: #e4aa48 !important; }
+.area-conteudo .linha-conteudo .coluna-full, .area-conteudo .linha-conteudo .coluna-third {text-align: center;}
+
+/* Skills */
+.especialidade {position: relative; padding-bottom: 35px; margin-bottom: 30px;}
+.especialidade::before {content:""; width: 100%; height: 25px; position: absolute; bottom: 0; left: 0; background-color: #38383b;}
+.especialidade::after {content:""; width: 60%; height: 25px; position: absolute; bottom: 0; left: 0; background: linear-gradient(9deg, rgba(240,214,114,1) 0%, rgba(228,170,72,1) 100%);}
+.especialidade.full::after {animation: load 2s forwards;}
+.especialidade.middle::after {animation: middle 2s forwards;}
+.especialidade.low::after {animation: low 2s forwards;}
+.especialidade.very::after {animation: very 2s forwards;}
+
+
+/* Projetos */
+.projetos {text-align: center;position: relative;z-index: 50;padding: 20px 0;}
+.projetos h3 {font-size: 18px;text-transform: uppercase;font-weight: 900;color: #E4AA48;}
+.projetos h3 > span {font-weight: 500 !important;color: #ffff !important;margin: 0 !important;}
+.projetos::before {content:""; width: 100%; height: 30%; background-color: #2e2e35; position: absolute; left: 0; top: 0; z-index: -1; border-radius: 30px 30px 0 0;}
+.projetos::after {content:""; width: 100%; height: 100%; background-color: #434346; position: absolute; left: 0; top: 0; z-index: -2; border-radius: 30px;}
+.projetos {margin-bottom: 20px;}
+
+
+/* Contatos */
+.contato a {height: 100px;width: 100px;display: flex;background-color: #3c3c3c;border-radius: 100%;}
+.contato a > img {width: 70%;height: 70%;margin: auto;}
+.contato .coluna-four {transition: ease-in-out .4s;}
+.contato .coluna-four:hover {transform: scale(0.9);transition: ease-in-out .4s;}
+.contato .coluna-four:hover img {animation: bounce .4s infinite alternate;}
+
+
+/* Responsivo */
+@media only screen and (min-width: 981px) {
+	/* Desktop */
+
+	/* Conteúdos */
+	.area-conteudo .linha-conteudo .area-titulo {width: 110%;z-index: 10;position: relative;margin-top: 18%;}
+	.area-conteudo .linha-conteudo .coluna-half.last {margin-right: 0 !important;}
+	.area-conteudo .linha-conteudo .area-imagem {margin-bottom: -415px;}
+	.area-conteudo .linha-conteudo .coluna-half {width: 47.25%;float: left;margin-right: 5.5%;}
+	.area-conteudo .linha-conteudo .coluna-third {width: 29.6667%;float: left;margin-right: 5.5%;}.area-conteudo .linha-conteudo .coluna-third.last {margin-right: 0 !important;}.area-conteudo .linha-conteudo .coluna-four { width: 23%; margin-right: 2.6%; float: left;}
+	.area-conteudo .linha-conteudo .coluna-four.last { margin-right: 0 !important;}.projetos .desc { min-height: 300px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; width: 95%; margin-left: 2.5%;}
+	.area-conteudo.sobre {padding: 0 !important; z-index: 20; position: relative;}
+	.area-conteudo.sobre .linha-conteudo {margin-top: -550px;}
+	.area-conteudo.light {z-index: 10; position: relative;}
+	.linha-conteudo.linha-projetos {width: 90%;}
+	.area-conteudo .linha-conteudo .area-titulo h1, .area-conteudo .linha-conteudo .area-h2 h2 {font-size: 48px;}
+	.area-conteudo .linha-conteudo .area-titulo h1 > span, .area-conteudo .linha-conteudo .area-h2 h2 > span {font-size: 35px;}
+	.area-conteudo .linha-conteudo .area-titulo {padding: 10px 30px;}
+	
+	/* Botões */
+	.botao:hover {color: rgb(46, 46, 53);transition: ease-in-out .4s;}
+
+	/* Projetos */
+	.projetos .desc img {max-width: 180px;}
+	.projetos.centro {margin-top: 90px;}
+	
+	/* Contatos */
+	.contato {width: 50%; margin: auto;}
+
+	/* Header */
+	.header {position: absolute; width: 100%;}
+	
+	/* Menu */
+	.menu-sticky:not(.is-sticky){right: -90px; transition: ease-in-out .4s;}
+	.menu-sticky.is-sticky {right: 20px; transition: ease-in-out .4s;}
+	.menu-sticky {position: fixed;height: 100vh;width: 65px;top: 35vh;z-index: 9999999999999;}
+	.menu-sticky .coluna-menu {text-align: center;background-color: #252526;padding: 10px;border-radius: 100%;margin-bottom: 10px;transition: ease-in-out .4s}
+	.menu-sticky .coluna-menu:hover {transform: scale(0.9);background-color: rgb(228, 170, 72);cursor: pointer;transition: ease-in-out .4s}
+	.coluna-menu span {display: none;}
+}
+
+@media only screen and (max-width: 980px){
+	.area-conteudo .linha-conteudo .area-h2 h2 {font-size: 28px;}
+	.area-conteudo .linha-conteudo .area-titulo h1 {font-size: 28px; text-align: center;}
+	.area-conteudo .linha-conteudo .area-titulo h1 > span, .area-conteudo .linha-conteudo .area-h2 h2 > span {font-size: 25px;}
+	.area-conteudo .linha-conteudo .area-titulo {padding: 20px 0;}
+	.botao {background-color: #2E2E35; transition: ease-in-out .4s;}
+	.area-conteudo .linha-conteudo .coluna-four {margin-top: 80px}
+	.area-conteudo .contato .coluna-four {width: 48%; display: inline-block;}
+	.contato a {margin: auto; text-decoration: none;}
+	.coluna-menu {width: 25%; float: left; text-align: center;}
+	.coluna-menu img {max-width: 35% !important;}
+	.coluna-menu a {text-decoration: none !important;}
+	.coluna-menu span {font-size: 13px; color: #ffff !important; text-decoration: none;}
+	.menu-sticky {position: fixed; bottom: 0; width: 100%; left: 0; z-index: 999999999999; padding: 15px 0; background-color: #151516; border-top: 1px solid #777;}
+	#contatos {padding-bottom: 150px;}
+	.area-conteudo.sobre {margin-top: -600px; position: relative; z-index: 9999999;}
+	.header {display: none;}
+}
+
+
+
+
+
+/* Key Frames*/
+
+/* Skills */
+@keyframes load {0% {width: 0;} 100% {width: 100%;}}
+@keyframes middle {0% {width: 0;} 100% {width: 90%;}}
+@keyframes low {0% {width: 0;} 100% {width: 70%;}}
+@keyframes very {0% {width: 0;} 100% {width: 75%;}}
+
+
+
+/* Contatos */
+@keyframes bounce {from {transform: rotateZ(5deg);} to {transform: rotateZ(-5deg);} }
+@-webkit-keyframes bounce {from {transform: rotateZ(5deg);} to {transform: rotateZ(-5deg);}}
